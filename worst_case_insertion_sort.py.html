@@ -1,14 +1,9 @@
 
-# coding: utf-8
-
-# In[19]:
 
 
 
 import time
 
-
-# In[14]:
 
 
 
@@ -31,34 +26,8 @@ time_cost = sum + ( time.time() - start )
 print(time_cost)
 
 
-'''
-results = []
-decksizes = [10, 100, 1000, 10000]
-repetition_limit = 1
-for n in range(0, len(decksizes)):
-    sum = 0
-    for repetition in range(1, repetition_limit ):
-        state = list(range(decksizes[n]+1, 1, -1))
-        
-    
-    start = time.time()
-    j = 1
-    for j in range(j, len(state)):
-        key = state[j]
-        i = j - 1
-        while i >= 0 and state[i] > key:
-            state[i + 1] = key
-            i = i - 1
-        state[i + 1] = key
-    sum = sum + ( time.time() - start )
-    
-time_cost = sum / repetition_limit
-print(time_cost)
-'''
         
 
-
-# In[15]:
 
 
 def insertion_sort(state):
@@ -80,7 +49,6 @@ time_cost = sum + ( time.time() - start )
 print(time_cost)
 
 
-# In[16]:
 
 
 def insertion_sort(state):
@@ -102,7 +70,6 @@ time_cost = sum + ( time.time() - start )
 print(time_cost)
 
 
-# In[20]:
 
 
 def insertion_sort(state):
